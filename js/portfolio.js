@@ -109,8 +109,8 @@ $(document).ready(function() {
 });
 
 function loadSections() {
-    var sectionIds = ["#page1", "#page2", "#page3"];
-    var urls = ["about.html", "skill.html", "project.html"];
+    var sectionIds = ["#page1", "#page2"];
+    var urls = ["about.html", "project.html"];
     
     sectionIds.forEach(function(sectionId, index) {
         $(sectionId).load(urls[index], function(response, status, xhr) {

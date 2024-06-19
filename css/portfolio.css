@@ -75,7 +75,6 @@ body, html {
 }
 
 .content {
-    background-color: #f0f0f0;
     width: 80%; /* 콘텐츠 부분 너비 80% */
     overflow: hidden;
     height: 100%;
@@ -101,9 +100,9 @@ body, html {
     width: 100%;
 }
 
-.section:nth-child(1) { background: darkseagreen; }
+/* .section:nth-child(1) { background: darkseagreen; }
 .section:nth-child(2) { background: gray; }
-.section:nth-child(3) { background: darkseagreen; }
+.section:nth-child(3) { background: darkseagreen; } */
 
 .navbar {
     position: fixed;
@@ -119,13 +118,15 @@ body, html {
 .navbar a {
     margin: 0 30px;
     text-decoration: none;
-    color: #333;
+    color: darkgray;
     font-size: 25px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .navbar a:hover {
-    text-decoration: underline gray;
+    text-decoration: underline black;
+    color: black;
 }
 
 
