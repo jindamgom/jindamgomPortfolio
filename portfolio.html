@@ -1,0 +1,60 @@
+<!--my page-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homepage index</title>
+
+ <link rel="stylesheet" href="./css/portfolio.css">
+
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+      <div class="div_me_pic">
+        <img id="img_me" src="/images/me.gif" >
+      </div>
+        
+        <div class="div_me_text">
+          <h1>Ko HyeJin</h1>
+          <p></p>
+          <h3>Wanna be BackEnd Developer</h3>
+          <div class="contact-info">
+            <img id="mail" src="/images/mail.png" alt="Mail Icon">
+            <p>update_set@naver.com</p>
+        </div>
+      </div>
+      <div class="div_me_site">
+      <img id="tistoryLogo" src="/images/tistory.png">
+      <img id="github" src="/images/github.png" >
+      <!-- <img id="mail" src="/images/mail.png" > -->
+      </div>
+    </div>
+
+    <!-- navebar(상단바) -->
+  <div class="content">
+      <div class="navbar">
+          <a onclick="navigateTo(0)">About</a>
+          <a onclick="navigateTo(1)">Skill</a>
+          <a onclick="navigateTo(2)">Project</a>
+      </div>
+
+
+
+
+
+      <!-- 컨텐츠 영역 -->
+      <div class="container">
+          <div class="section" id="page1"></div>
+          <div class="section" id="page2"></div>
+          <div class="section" id="page3"></div>
+      </div>
+  </div>
+    
+ 
+  <script src="./js/portfolio.js"></script>
+</body>
+</html>

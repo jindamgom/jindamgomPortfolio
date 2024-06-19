@@ -1,0 +1,71 @@
+<!--my page-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homepage index</title>
+
+
+  <!-- 
+        CDN방식으로 import, core style only 
+        두개의 stylesheet순서가 바뀌면 내가 적용할 membership.css가 먹통이 된다.
+        순서를 바꿔줘야 두 css가 잘 적용됨.
+    -->
+  <!--CDN방식으로 import-->
+  <!-- minify -->
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <!-- latest -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- core style only -->
+  <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />  
+ <link rel="stylesheet" href="./css/index.css">
+
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+  <div id="index_div_wrap">
+    <nav id="topMenu">
+      <a onclick="loadContent('index2.html')" class="eightbit-btn eightbit-btn--home">H</a>
+      <a id="btn_myPage" onclick="loadContent('mypage.html')" class="eightbit-btn">My page</a>
+      <a onclick="loadContent('tour.html')" class="eightbit-btn eightbit-btn--proceed">Tour</a>
+      <a onclick="loadContent('roadmap.html')" class="eightbit-btn eightbit-btn--reset">Road map</a>
+      <a onclick="loadContent('members.html')" class="eightbit-btn eightbit-btn--members">Members</a>
+      <!-- <a onclick="location.href='thanksto.html'" class="eightbit-btn eightbit-btn--thanksto">thanks to</a> -->
+      <a onclick="loadContent('membership.html')" class="eightbit-btn eightbit-btn--join">+</a>
+    </nav>
+
+    <!-- <article id="index_content">
+      <span>Hello World</span>
+      <img id="index_img1" src="../images/index_img1.jpg">
+    </article> -->
+    <div id="div_content">
+      <p>이곳에 컨텐츠 출력</p>
+    </div>
+    
+  </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
+<!--
+<a href="https://www.flaticon.com/kr/free-icons/" title="회원 아이콘">회원 아이콘  제작자: GOFOX - Flaticon</a>
+<a href="https://www.flaticon.com/kr/free-icons/" title="집 아이콘">집 아이콘  제작자: Freepik - Flaticon</a>
+
+-->
+<!--
+    CDN이란 html 파일에서 참조하는 css, javascript 파일이나 다른 리소스 파일을 
+    웹사이트 서버가 아닌 다른 공유 공간에 두고 여러 웹사이트가 참조할 수 있게 하는 서비스를 의미한다.
+    해당 외부스타일시트 링크를 <head></head>사이에 추가하면 부트스트랩을 사용할 수 있다.
+    https://github.com/nostalgic-css/NES.css
+    https://nostalgic-css.github.io/NES.css/
+    https://codemyui.com/crt-screen-text-flicker-animation-in-pure-css/
+-->
+
+<!--
+  무료 배경 사진 
+  https://kor.pngtree.com/freebackground/pixelated-background-design-of-roadside-street-in-retro-city-the-80s_963228.html?
+  sol=downref&id=bef
+-->

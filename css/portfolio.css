@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    display: flex; /* Flexbox로 설정 */
+    align-items: center; /* 세로 중앙 정렬 */
+    flex-direction: column; /* 상하 배치를 위해 세로로 설정 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    height: 100vh; /* 전체 화면 높이에 맞추기 */
+    /* background-color: gainsboro; */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 10%,
+        rgba(255, 255, 255, 0.5) 25%,
+        rgba(255, 255, 255, 0.7) 40%,
+        rgba(255, 255, 255, 1) 80%
+      ),
+      url('/images/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* 또는 contain */
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.div_me_site {
+    margin-top: 30px;
+    display: flex; /* flexbox 레이아웃 사용 */
+}
+
+.div_me_site > img {
+    padding-left: 20px;
+    width:40px;
+    height:40px;
+    cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* 호버 효과를 위한 변환 전환 */
+}
+.div_me_site img:hover {
+    transform: scale(1.1); /* 10% 확대 */
+    opacity: 0.5; /* 50% 불투명도 */
+}
+
+
+.div_me_pic {
+    text-align: center; /* 이미지 가운데 정렬 */
+}
+
+.div_me_text {
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+.contact-info {
+    display: flex; /* Flexbox 레이아웃 사용 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+.contact-info img{
+    width: 30px; /* 이미지 너비 */
+    height: 30px; /* 이미지 높이 */
+    margin-right: 5px;
+}
+
+
+.div_me_pic img {
+    width: 200px; /* 이미지 너비 */
+    height: 200px; /* 이미지 높이 */
+    border-radius: 50%; /* 원형 모양 */
+}
+
+.content {
+    background-color: #f0f0f0;
+    width: 80%; /* 콘텐츠 부분 너비 80% */
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 300%; /* 3 sections, each 100% height of viewport */
+    transition: transform 0.5s ease;
+    width: 100%; /* 컨테이너 너비 80% */
+    margin: 0 auto; /* 가운데 정렬을 위한 자동 마진 */
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: black; /* 글자색 검은색 */
+    width: 100%;
+}
+
+.section:nth-child(1) { background: darkseagreen; }
+.section:nth-child(2) { background: gray; }
+.section:nth-child(3) { background: darkseagreen; }
+
+.navbar {
+    position: fixed;
+    top: 10px;
+    right: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    text-decoration: underline gray;
+}
+
+

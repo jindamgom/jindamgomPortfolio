@@ -1,0 +1,44 @@
+<!--
+    회원 가입 페이지
+    회원가입 폼 태그 구현 후 html5api web-storage학습 후 구현
+    1201 구현 및 테스트
+-->
+<!--Landing page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage join</title>
+    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+    <!-- 적용할 style sheet-->
+    <link rel="stylesheet" href="css/membership.css"/>
+</head>
+<body>
+    <div class="wrapper">
+
+    
+  
+      <article id="membership_content">
+      <p>join the membership</p>
+
+      <div id="membership_input_div">    
+        <form name="guestbookFrm" action="javascript:saveMember();"> 
+        <input type="text" id="id_field" name="userId" class="nes-input is-success" placeholder="닉네임을 입력해주세요.">
+        <span class="tooltiptext">말풍선 텍스트</span>
+        <br>
+        <input type="password" id="pw_field" name="password" class="nes-input is-warning" placeholder="비밀번호 : 8자 이상, 영어/숫자/특수문자 1개 이상 포함">
+        <br>
+        <input type="password" id="conpw_field" name="con_password" class="nes-input is-error" placeholder="비밀번호를 한 번 더 입력해주세요">
+        <br>
+        <br>
+        <input type="submit" value="가입하기">
+      </form>
+      </div>
+      
+    </article>
+    
+    </div>
+      <script src="./js/membership.js"></script>
+</body>
+</html>
